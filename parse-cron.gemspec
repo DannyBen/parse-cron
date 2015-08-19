@@ -9,8 +9,9 @@ Gem::Specification.new do |s|
   s.authors     = ["Michael Siebert"]
   s.email       = ["siebertm85@googlemail.com"]
   s.homepage    = "https://github.com/siebertm/parse-cron"
-  s.summary     = %q{Parses cron expressions and calculates the next occurence}
+  s.summary     = %q{Cron expression parser}
   s.description = %q{Parses cron expressions and calculates the next occurence}
+  s.license     = 'MIT'
 
   s.rubyforge_project = "parse-cron"
 
@@ -19,5 +20,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_development_dependency 'rspec', '~>2.6.0'
+  s.add_development_dependency 'rspec', '~>2.6'
 end
